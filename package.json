@@ -1,0 +1,20 @@
+{
+  "name": "ai-docs-qa",
+  "version": "1.0.0",
+  "description": "Ask questions about your documents. BM25 retrieval + LLM answers with source citations, with an extractive fallback.",
+  "type": "module",
+  "scripts": {
+    "ask": "tsx src/cli.ts",
+    "start": "tsx src/server.ts",
+    "test": "tsx --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "express": "^4.21.0", "zod": "^3.23.8" },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}
